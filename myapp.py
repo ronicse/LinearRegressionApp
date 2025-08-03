@@ -10,3 +10,4 @@ st.subheader("Data Science with Dr. MS Rahman")
 
 # Sidebar
 st.sidebar.header("Upload CSV Data or Use Sample")
+use_example = st.sidebar.checkbox("Use example dataset")
