@@ -7,3 +7,6 @@ from sklearn.model_selection import train_test_split
 
 st.title("Linear Regression Web Application")
 st.subheader("Data Science with Dr. MS Rahman")
+
+# Sidebar
+st.sidebar.header("Upload CSV Data or Use Sample")
