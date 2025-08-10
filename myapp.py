@@ -33,13 +33,3 @@ st.write(df.head())
 
 # Model feature selection
 numeric_cols = df.select_dtypes(include=np.number).columns.tolist()
-if len(numeric_cols):
-  st.error("Need at least two numeric columns for regression.")
-
-
-
-
-
-
-
-
