@@ -83,7 +83,7 @@ for feature in features:
   except ValueError:
     valid_input = False
 
-
+st.button("Predict")
 
 
 
