@@ -83,7 +83,14 @@ for feature in features:
   except ValueError:
     valid_input = False
 
-st.button("Predict")
+if st.button("Predict"):
+  if valid_input:
+    input_df = pd.DataFrame([input_data])
+    input_scaled = scaler.transform(input_df)
+    prediction = model.predict(input_scaled)
+    st.success(f"Predicted {target}: {prediction[0]:.2f}")
+  else:
+    st.error("Pelase enter valid numeric values for all features before predicting.")
 
 
 
